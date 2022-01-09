@@ -1,0 +1,284 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ #coverphoto img {
+      width : 100%;
+}
+header{
+    background-color: rgb(11, 22, 11, .25);
+    display:flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+    /* border: 2px solid white; */
+    
+}
+/* This is the left side of header  */
+
+#left{ 
+    width: 20%;
+    /* border: 2px solid #ff8052 ; */
+
+}
+
+
+/* This is the mid part of header  */
+#mid{
+    width: 60%;
+    /* border: 2px solid #ff8052 ; */
+
+}
+#navbar{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    
+}
+#navbar li {
+    margin : 10px;
+    list-style: none;
+    
+   transition: background-color 1s ease-out;
+    
+}
+
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif ;
+    font-size: 1.4vw;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+
+}
+
+#food{
+    position: relative;
+    display: inline-block;
+}
+#foodDropdown{
+    display : none;
+    left : -50px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5px;
+}
+#foodDropdown  li{
+    padding-top : 10px;
+    
+}
+#foodDropdown li a{
+    color: black;
+
+
+}
+#foodDropdown li a:hover{
+    color: rgba(0, 0, 0, 0.527);
+    
+
+}
+#food:hover #foodDropdown{
+    display: block;
+}
+#beverage{
+    position: relative;
+    display: inline-block;
+}
+#beverageDropdown{
+    display : none;
+    left : -50px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5px;
+}
+#beverageDropdown  li{
+    padding-top : 10px;
+    
+}
+#beverageDropdown li a{
+    color: black;
+
+
+}
+#beverageDropdown li a:hover{
+    color: rgba(0, 0, 0, 0.527);
+
+}
+#beverage:hover #beverageDropdown{
+    display: block;
+}
+
+/* This is the right side of header  */
+#right{
+    width:20%;
+
+}
+
+#text {
+    font-family: "Sofia", sans-serif;
+    font-size: 10vh;
+    text-align: center ;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    /* margin: -5px; */
+    
+}
+#container{
+    display: flex;
+
+}
+#content{
+    border: 2px solid rgba(105, 98, 98, 0.055);
+    padding :1%;
+    display: flex;
+    flex-direction: column;
+    
+    width : 70%;
+}
+#sideBar{
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    padding :1%;
+    width : 30%;
+}
+.article{
+    padding :1%;
+    margin :20px;
+}
+.article img {
+    width : 100%;
+    border-radius: 5px;
+}
+.article h2 {
+    font-family: 'Rajdhani', sans-serif ;
+    font-size: 10vh;
+    color: rgb(136, 136, 130);
+    
+}
+.article p {
+    color: rgb(136, 136, 130);
+    font-family: 'Rajdhani', sans-serif ;
+    font-size: 2vh;
+}
+.post{
+    background-color: #f2f2f2;
+    padding :1%;
+    margin :20px;
+    border-radius: 1vh;
+}
+.post div form [type = "search"]{
+    width : 70%;
+    box-sizing: border-box;
+    height : 35px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif ;
+}
+.post div form [type = "submit"]{
+    box-sizing: border-box;
+    height : 35px;
+    font-family: 'Rajdhani', sans-serif ;
+    text-align: center;
+    width : 28%;
+    background-color: rgb(243, 188, 85);
+    border-radius: 5px;
+    
+}
+#latestPost h3{
+    font-size: 3vh;
+    font-family: 'Rajdhani', sans-serif ;
+    text-align: center;
+    color: rgb(112, 108, 104);
+    
+}
+.eachPost img{
+    width : 90%;
+    border-radius: 1vh;
+    margin: 5%;
+    /* box-sizing: border-box; */
+}
+.eachPost h4{
+    margin :0 5% 5% 5%;
+    font-family: 'Rajdhani', sans-serif ;
+    
+    
+}
+footer{
+     display :flex;
+     background-color: rgb(12, 12, 12); 
+     font-family: 'Rajdhani', sans-serif ;
+     font-size: 1.5vw;
+     letter-spacing: 2px;
+     color: rgb(250, 246, 246);
+     padding: 3% 0;
+     justify-content: space-evenly;
+     
+     
+
+}
+footer .column{
+    width : 30%;
+    
+    
+}
+#footeritem {
+   
+    margin :auto;
+    width : 50%;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#footeritem a {
+    
+    text-decoration: none;
+    transition: transform color .2s ease-out;
+    color: rgb(175, 174, 171);
+    
+    display: block;
+    
+    
+}
+#footeritem a:hover{
+    transform: scale(.95);
+    color: #faf9f6e8;
+}
+#socialMedia{
+    display : flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin :auto;
+
+}
+#socialMedia a{
+    display :block;
+
+    
+
+}
+#socialMedia img{
+    width: 2vw;
+    display: block;
+    margin: auto;
+    
+    
+}
+#socialMedia img:hover{
+    transform: scale(.8);
+}
