@@ -1,2 +1,2 @@
 # food
-Project files of food blogging website.
+Project of food blogging website.
